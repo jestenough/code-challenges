@@ -15,3 +15,4 @@ Programming language: **Python 3**
 ## Services
 
 - [Codewars](codewars/)
+- [Project Euler](project_euler/)

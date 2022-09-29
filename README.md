@@ -15,4 +15,5 @@ Programming language: **Python 3**
 ## Services
 
 - [Codewars](services/codewars/)
+- [LeetCode](services/leetcode/)
 - [Project Euler](services/project_euler/)

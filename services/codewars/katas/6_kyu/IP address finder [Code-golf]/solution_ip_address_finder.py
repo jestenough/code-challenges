@@ -1,0 +1,1 @@
+f = lambda u:[sum(map(ord,u))*i % 256 for i in range(1, 5)]

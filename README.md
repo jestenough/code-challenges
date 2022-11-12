@@ -15,16 +15,17 @@
 </div>
 
 
-# Description
+## Description
+
 
 Solved challenges from different services
 
 Challenges include:
 * **description**
 * **solution**
-* **testing**
+* **testing** (yet only for python)
 
-Programming language: **Python 3**
+Programming languages: **Python 3**, **SQL** (PL/pgSQL)
 
 
 ## Services

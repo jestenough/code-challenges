@@ -1,8 +1,10 @@
+import os
+
 from solution_ip_address_finder import f
 
 
 def test_f():
-    with open("services/codewars/katas/6_kyu/IP address finder [Code-golf]/solution_ip_address_finder.py", 'r') as file:
+    with open(os.path.join(os.path.dirname(__file__), 'solution_ip_address_finder.py'), 'r') as file:
         text_of_solution = file.read()
     assert text_of_solution.find('import') == -1
     assert len(text_of_solution) <= 59

@@ -1,5 +1,6 @@
 def problem_08():
-    with open("services/project_euler/problems/problem_08/number.txt", 'r') as f:
+    import os
+    with open(os.path.join(os.path.dirname(__file__), 'number.txt'), 'r') as f:
         number_1000_digit = f.read()
 
     number_1000_digit = number_1000_digit.replace('\n', '')

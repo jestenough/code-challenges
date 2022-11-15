@@ -1,5 +1,6 @@
 def problem_11():
-    with open("services/project_euler/problems/problem_11/number.txt", 'r') as f:
+    import os
+    with open(os.path.join(os.path.dirname(__file__), 'number.txt'), 'r') as f:
         numbers = f.readlines()
 
     array = []

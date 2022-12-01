@@ -30,6 +30,7 @@ Programming languages: **Python 3**, **SQL** (PL/pgSQL)
 
 ## Services
 
+- [Advent of Code](services/adventofcode/)
 - [Codewars](services/codewars/)
 - [LeetCode](services/leetcode/)
 - [Project Euler](services/project_euler/)

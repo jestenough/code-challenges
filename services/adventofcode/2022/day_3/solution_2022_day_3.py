@@ -8,7 +8,7 @@ def day_3_two_parts():
     part_1_sum = 0
     part_2_sum = 0
     list_of_sets = []
-    for iteration, rucksack in enumerate(rucksacks):
+    for iteration, rucksack in enumerate(rucksacks, start=1):
         pure_rucksack = rucksack.rstrip()
 
         list_of_sets.append(set(pure_rucksack))
@@ -16,10 +16,8 @@ def day_3_two_parts():
         intersection_of_two_compartments = set(pure_rucksack[:len(pure_rucksack) // 2]).intersection(set(pure_rucksack[len(pure_rucksack) // 2:]))
         part_1_sum += sum([abc_lower_upper.index(character)+1 for character in intersection_of_two_compartments])
 
-        if (iteration+1) % 3 == 0:
+        if iteration % 3 == 0:
             part_2_sum += sum([abc_lower_upper.index(character)+1 for character in (set.intersection(*list_of_sets))])
             list_of_sets.clear()
     else:
         return [part_1_sum, part_2_sum]
-
-print(day_3_two_parts())

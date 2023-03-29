@@ -2,7 +2,6 @@
 
 <a href="https://github.com/jestenough/code_challenges/actions/workflows/pytest.yml"><img src="https://github.com/jestenough/code_challenges/actions/workflows/pytest.yml/badge.svg"></a>
 
-
 ## Badgets
 
 <div class="micro-badgets">
@@ -14,19 +13,17 @@
     <img src="https://projecteuler.net/profile/jestenough.png" alt=""/>
 </div>
 
-
 ## Description
-
 
 Solved challenges from different services
 
 Challenges include:
-* **description**
-* **solution**
-* **testing** (yet only for python)
 
-Programming languages: **Python 3**, **SQL** (PL/pgSQL)
+- **description**
+- **solution**
+- **testing** (yet only for python)
 
+Programming languages: **Python 3**, Golang, **SQL** (PL/pgSQL)
 
 ## Services
 

@@ -23,7 +23,7 @@ Challenges include:
 - **solution**
 - **testing** (yet only for python)
 
-Programming languages: **Python 3**, Golang, **SQL** (PL/pgSQL)
+Programming languages: **Python 3**, **Golang**, **SQL** (PL/pgSQL)
 
 ## Services
 

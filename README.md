@@ -31,3 +31,9 @@ Programming languages: **Python 3**, **Golang**, **SQL** (PL/pgSQL)
 - [Codewars](services/codewars/)
 - [LeetCode](services/leetcode/)
 - [Project Euler](services/project_euler/)
+
+
+## Collections
+
+- [Python-programming-exercises](collections/Python-programming-exercises/)
+

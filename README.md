@@ -35,5 +35,6 @@ Programming languages: **Python 3**, **Golang**, **SQL** (PL/pgSQL)
 
 ## Collections
 
+- [Learngo](collections/learngo)
 - [Python-programming-exercises](collections/Python-programming-exercises/)
 

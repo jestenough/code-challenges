@@ -1,6 +1,6 @@
 ## Why do you need to use comments sometimes?
 1. To combine different expressions together
-2. To provide explanations or generating automatic documentation for your code *CORRECT*
+2. To provide explanations or generating automatic documentation for your code 
 3. To make the code look nice and beautiful
 
 
@@ -15,7 +15,7 @@ func main() {
 }
 ```
 
-2. *CORRECT*
+2. 
 ```go
 package main
 
@@ -51,7 +51,7 @@ func main() {
 
 ## How should you name your code so that Go can generate documentation from your code automatically?
 1. By commenting each line of the code; then it will generate the documentation from whatever it sees
-2. By starting the comments using the name of the declared names *CORRECT*
+2. By starting the comments using the name of the declared names 
 3. By using multi-line comments
 
 > **1:** This won't help. Sorry.
@@ -66,12 +66,12 @@ func main() {
 1. go build
 2. go run
 3. go doctor
-4. go doc *CORRECT*
+4. go doc 
 
 
 ## What's the difference between `godoc` and `go doc`?
 1. `go doc` is the real tool behind `godoc`
-2. `godoc` is the real tool behind `go doc` *CORRECT*
+2. `godoc` is the real tool behind `go doc` 
 3. `go` tool is the real tool behind `go doc`
 4. `go` tool is the real tool behind `godoc`
 

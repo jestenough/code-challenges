@@ -3,7 +3,7 @@
 ## What's an array?
 1. Accelerated charged particle array gun from Star Wars
 2. Collection of values with dynamic length and type
-3. Collection of values with fixed length and type *CORRECT*
+3. Collection of values with fixed length and type 
 
 
 ## Where is the 2nd variable below stored in memory?
@@ -17,7 +17,7 @@ var (
 1. 21
 2. 22
 3. 24
-4. It can be stored anywhere *CORRECT*
+4. It can be stored anywhere 
 
 > **4:** That's right. It can be anywhere. Because, unlike arrays, there isn't any guarantee that variables will be stored in contiguous memory locations.
 
@@ -32,7 +32,7 @@ var nums [5]int64
 2. 2
 3. 502
 4. 503
-5. 516 *CORRECT*
+5. 516 
 
 > **2:** Nope, that's the index of an element.
 >
@@ -47,7 +47,7 @@ var nums [5]int64
 var gophers [10]string
 ```
 1. 0
-2. 1 *CORRECT*
+2. 1 
 3. 2
 4. 10
 
@@ -60,7 +60,7 @@ var gophers [10]string
 ```go
 var gophers [5]int
 ```
-1. 5 *CORRECT*
+1. 5 
 2. 1
 3. 2
 
@@ -73,7 +73,7 @@ const length = 5 * 2
 var gophers [length - 1]int
 ```
 1. 10
-2. 9 *CORRECT*
+2. 9 
 3. 1
 
 > **2:** That's right! 5 * 2 - 1 is 9. You can use constant expressions while declaring the length of an array.
@@ -85,14 +85,14 @@ var luminosity [100]float32
 ```
 1. [100]float32
 2. luminosity
-3. float32 *CORRECT*
+3. float32 
 
 
 ## What's the type of this array?
 ```go
 var luminosity [100]float32
 ```
-1. [100]float32 *CORRECT*
+1. [100]float32 
 2. luminosity
 3. float32
 
@@ -117,7 +117,7 @@ func main() {
 }
 ```
 1. !think!Don't
-2. Don't think!! *CORRECT*
+2. Don't think!! 
 3. This program is incorrect
 
 > **2:** "Don't think!! Just do!". Explanation is here: https://play.golang.org/p/y_Tqwn_XRlg
@@ -145,7 +145,7 @@ func main() {
 	}
 }
 ```
-1. 0 0 0 0 *CORRECT*
+1. 0 0 0 0 
 2. 10 10 10 10
 3. 0 10 10 10
 

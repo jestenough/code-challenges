@@ -7,7 +7,7 @@ words := []string{"lucy", "in", "the", "sky", "with", "diamonds"}
 1. words = append(words[:3], "crystals")
 2. words = append(words[:4], "crystals")
 3. words = append(words[:5], "crystals")
-4. words = append(words[:5], "crystals", "and", "diamonds") *CORRECT*
+4. words = append(words[:5], "crystals", "and", "diamonds") 
 
 > **1:** No, it just overwrites the 4th element.
 > 
@@ -26,7 +26,7 @@ words = append(words, words[len(words)+1:cap(words)]...)
 ```
 1. lucy in the sky with diamonds
 2. lucy is everywhere in the sky with diamonds
-3. lucy is everywhere with diamonds *CORRECT*
+3. lucy is everywhere with diamonds 
 4. lucy is everywhere
 
 > **3:** line #2 overwrites the 2nd and 3rd elements. line #3 appends ["with" "diamonds"] after the ["lucy" "is" "everwhere"].
@@ -45,7 +45,7 @@ words = append(words, "boom!")
 1. Length: 1024 - Capacity: 1024
 2. Length: 1025 - Capacity: 1025
 3. Length: 1025 - Capacity: 1280
-4. Length: 1024 - Capacity: 2048 *CORRECT*
+4. Length: 1024 - Capacity: 2048 
 
 > **4:** That's right! Append function grows by doubling the capacity of the previous slice.
 
@@ -62,7 +62,7 @@ words = append(words, "boom!")
 ```
 1. Length: 1024 - Capacity: 1024
 2. Length: 1025 - Capacity: 1025
-3. Length: 1025 - Capacity: 1280 *CORRECT*
+3. Length: 1025 - Capacity: 1280 
 4. Length: 1025 - Capacity: 2048
 
 > **3, 4:** After 1024 elements, the append function grows at a slower rate, about 25%.

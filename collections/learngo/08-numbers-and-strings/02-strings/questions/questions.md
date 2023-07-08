@@ -4,7 +4,7 @@
 ```
 
 1. "Hello" "World"
-2. "Hello" \"World\" *CORRECT*
+2. "Hello" \"World\" 
 3. "Hello" `"World"`
 4. "\"Hello\" `\"World\"`"
 
@@ -23,7 +23,7 @@
 </xml>
 ```
 
-1. *CORRECT*
+1. 
 ```go
 `<xml>
     <items>
@@ -72,7 +72,7 @@ len("lovely")
 
 1. 7
 2. 8
-3. 6 *CORRECT*
+3. 6 
 4. 0
 
 > **2:** Remember! "a" is 1 char. `a` is also 1 char.
@@ -85,7 +85,7 @@ len("very") + len(`\"cool\"`)
 ```
 
 1. 8
-2. 12 *CORRECT*
+2. 12 
 3. 16
 4. 10
 
@@ -107,7 +107,7 @@ len("very") + len("\"cool\"")
 1. 8
 2. 12
 3. 16
-4. 10 *CORRECT*
+4. 10 
 
 > **1:** There are also double-quotes, count them as well.
 >
@@ -127,7 +127,7 @@ len("péripatéticien")
 **USELESS INFORMATION:** "péripatéticien" means "wanderer".
 
 1. 14
-2. 16 *CORRECT*
+2. 16 
 3. 18
 4. 20
 
@@ -146,7 +146,7 @@ len("péripatéticien")
 
 1. `len(péripatéticien)`
 2. `len("péripatéticien")`
-3. `utf8.RuneCountInString("péripatéticien")` *CORRECT*
+3. `utf8.RuneCountInString("péripatéticien")` 
 4. `unicode/utf8.RuneCountInString("péripatéticien")`
 
 > **1:** Where are the double-quotes?
@@ -163,7 +163,7 @@ utf8.RuneCountInString("péripatéticien")
 ```
 
 1. 16
-2. 14 *CORRECT*
+2. 14 
 3. 18
 4. 20
 
@@ -176,7 +176,7 @@ utf8.RuneCountInString("péripatéticien")
 ## Which package contains string manipulation functions?
 1. string
 2. unicode/utf8
-3. strings *CORRECT*
+3. strings 
 4. unicode/strings
 
 
@@ -190,7 +190,7 @@ strings.Repeat("*x", 3) + "*"
 1. `*x*x*x`
 2. `x*x*x`
 3. `*x3`
-4. `*x*x*x*` *CORRECT*
+4. `*x*x*x*` 
 
 > **1:** You're close but you missed the concatenation at the end.
 >
@@ -210,7 +210,7 @@ strings.ToUpper("bye bye ") + "see you!"
 1. `bye bye see you!`
 2. `BYE BYE SEE YOU!`
 3. `bye bye + see you!`
-4. `BYE BYE see you!` *CORRECT*
+4. `BYE BYE see you!` 
 
 > **1:** You missed the ToUpper?
 >

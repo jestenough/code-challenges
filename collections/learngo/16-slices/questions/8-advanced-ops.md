@@ -8,7 +8,7 @@ part  := lyric[1:3:5]
 1. Length: 1 - Capacity: 5
 2. Length: 1 - Capacity: 3
 3. Length: 3 - Capacity: 5
-4. Length: 2 - Capacity: 4 *CORRECT*
+4. Length: 2 - Capacity: 4 
 
 > **4:** General Formula: `[low:high:max]` => `length = high - max` and `capacity = max - low`. `lyric[1:3]` is `["me" "my"]`. `lyric[1:3:5]` is `["me" "my" "silver" "lining"]`. So, `[1:3]` is the returned slice, length: 2. `[1:3:5]` limits the capacity to four because after the 1st element there are only four more elements.
 
@@ -21,14 +21,14 @@ part   = append(part, "right", "place")
 ```
 1. lyric's len: 5, cap: 5 — part's len: 5, cap: 5
 2. lyric's len: 3, cap: 1 — part's len: 2, cap: 3
-3. lyric's len: 5, cap: 5 — part's len: 4, cap: 4 *CORRECT*
+3. lyric's len: 5, cap: 5 — part's len: 4, cap: 4 
 4. lyric's len: 3, cap: 1 — part's len: 2, cap: 3
 
 > **3:** `lyric[:2:2]` = ["show" "me"]. After the append the part becomes: ["show" "me" "right" "place"] — so it allocates a new backing array. `lyric` stays the same: `["show" "me" "my" "silver" "lining"]`.
 
 
 ## When you might want to use the make function?
-1. To preallocate a backing array for a slice with a definite length *CORRECT*
+1. To preallocate a backing array for a slice with a definite length 
 2. To create a slice faster
 3. To use less memory
 
@@ -42,7 +42,7 @@ tasks  = append(tasks, "hello", "world")
 
 fmt.Printf("%q\n", tasks)
 ```
-1. ["" "" "hello" "world"] *CORRECT*
+1. ["" "" "hello" "world"] 
 2. ["hello" "world"]
 3. ["hello" "world" "" ""]
 
@@ -57,7 +57,7 @@ tasks  = append(tasks, "hello", "world")
 fmt.Printf("%q\n", tasks)
 ```
 1. ["" "" "hello" "world"]
-2. ["hello" "world"] *CORRECT*
+2. ["hello" "world"] 
 3. ["hello" "world" "" ""]
 
 > **2:** `make([]string, 0, 2)` creates a slice with len: 0 and cap: 2. `append()` appends after the length of the slice (at the beginning). That's why the first two elements are overwritten with the newly appended elements. This is a common usage pattern when you want to use the `make` and the `append` functions together.
@@ -79,7 +79,7 @@ fmt.Printf("%d %q\n", n, lyric)
 ```
 1. 4 ["le" "vent" "le" "vent"]
 2. 4 ["le" "vent" "nous" "portera"]
-3. 4 ["" "" "" ""] *CORRECT*
+3. 4 ["" "" "" ""] 
 4. 0 []
 
 > **3:** `copy` copies a newly created slice with four elements (`make([]string, 4)`) onto `lyric` slice. They both have 4 elements, so the `copy` copies 4 elements. Remember: `make()` initializes a slice with zero-values of its element type. Here, this operation clears all the slice elements to their zero-values.
@@ -92,7 +92,7 @@ total := spendings[2][1] + spendings[3][0] + spendings[0][0]
 
 fmt.Printf("%d\n", total)
 ```
-1. 725 *CORRECT*
+1. 725 
 2. 650
 3. 500
 4. 750
@@ -110,7 +110,7 @@ fmt.Printf("%T - ", spendings[0])
 fmt.Printf("%T", spendings[0][0])
 ```
 1. [][]int{{1, 2}} - []int{1, 2} - int(2)
-2. [][]int - []int - int *CORRECT*
+2. [][]int - []int - int 
 3. []int - int - 2
 4. [][]int - [][]int - []int
 
@@ -123,7 +123,7 @@ fmt.Printf("%T", spendings[0][0])
 ```    
 1. [][][3]int
 2. [][]int
-3. [][3]int *CORRECT*
+3. [][3]int 
 4. [3]int
 
 > **3:** `[][][3]int` is a multi-dimensional slice of `[][3]int` elements. `[][3]int` is a multi-dimensional slice of `[3]int` elements. `[3]int` is an array of 3 `int` values.

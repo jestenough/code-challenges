@@ -1,6 +1,6 @@
 ## Which scope a label belongs to?
 1. To the scope of the statement that it is in
-2. To the body of the function that it is in *CORRECT*
+2. To the body of the function that it is in 
 3. To the package scope that it is in
 
 > **1:** Labels do not belong to statement scopes unlike other names like variable or constant names.
@@ -18,7 +18,7 @@ words:
 }
 ```
 1. The first loop
-2. The second, nested loop *CORRECT*
+2. The second, nested loop 
 3. All the loops
 
 > **2:** A label can only label one statement at a time.
@@ -42,7 +42,7 @@ main:
 	}
 }
 ```
-1. No, the break will only terminate the switch but the loop will continue *CORRECT*
+1. No, the break will only terminate the switch but the loop will continue 
 2. Yes, the break will terminate the loop
 3. Yes, the break will terminate the switch
 
@@ -73,7 +73,7 @@ main:
 ```
 1. No, this loop will loop to infinity
 2. Yes, the first break will terminate the loop
-3. Yes, the second break will terminate the loop *CORRECT*
+3. Yes, the second break will terminate the loop 
 
 > **2:** No it does not but it helps.
 > 
@@ -103,7 +103,7 @@ func main() {
 ```
 1. It breaks from the 2nd switch causing the program will loop indefinitely
 2. It breaks from the 2nd switch and then the 2nd break will terminate the loop
-3. It breaks from the 1st switch and then the 2nd break will terminate the loop *CORRECT*
+3. It breaks from the 1st switch and then the 2nd break will terminate the loop 
 
 > **1:** There's another break after the switch, so the loop will end immediately.
 >
@@ -128,7 +128,7 @@ func main() {
 	}
 }
 ```
-1. continue statement can only continue a loop *CORRECT*
+1. continue statement can only continue a loop 
 2. continue statement cannot be used within a switch statement
 3. It will loop to infinity
 
@@ -165,7 +165,7 @@ I mean: When you run it, which one will quit. Some of the codes here will indefi
         getout: fmt.Println("exiting")
     }
    ```
-   *CORRECT*
+   
 
 > **1:** In the start label: "goto exit" sends the execution to the exit label. In the exit label: "goto start" sends the execution back to the start label. So, it's an infinite loop. The program will never terminate.
 >

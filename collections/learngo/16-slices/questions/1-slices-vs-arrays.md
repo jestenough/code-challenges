@@ -3,12 +3,12 @@
 ## Why you want to use a slice instead of an array?
 1. I like arrays more
 2. I want to create a dynamic collection, so I need an array
-3. A slice's length is dynamic, so I can create dynamic collections *CORRECT*
+3. A slice's length is dynamic, so I can create dynamic collections 
 
 
 ## Where does the length of a slice belong to?
 1. Compile-Time
-2. Runtime *CORRECT*
+2. Runtime 
 3. Walk-Time
 4. Sleep-Time
 
@@ -24,7 +24,7 @@ func sort(nums []int) {
 ```
 1. sort([...]int{3, 1, 6})
 2. sort([]int32{3, 1, 6})
-3. sort([]int{3, 1, 6}) *CORRECT*
+3. sort([]int{3, 1, 6}) 
 
 > **1:** You can't call the sort function using an array. It expects an int slice.
 > 
@@ -39,7 +39,7 @@ var tasks []string
 ```
 1. 0
 2. 1
-3. nil *CORRECT*
+3. nil 
 4. unknown
 
 > **3:** This is a nil slice. Unlike an array, a slice's zero value is nil.
@@ -51,7 +51,7 @@ var tasks []string
 fmt.Println(len(tasks))
 ```
 
-1. 0 *CORRECT*
+1. 0 
 2. 1
 3. nil
 4. It doesn't work.
@@ -68,7 +68,7 @@ fmt.Println(tasks[0])
 1. 0
 2. 1
 3. nil
-4. It doesn't work. *CORRECT*
+4. It doesn't work. 
 
 > **4:** You can't get an element that does not exist. A nil slice does not contain any elements.
 
@@ -76,7 +76,7 @@ fmt.Println(tasks[0])
 ## Which declaration below is a correct slice declaration?
 1. [...]int{}
 2. [2]string{"hello", "world"}
-3. []string{"hello", "world"} *CORRECT*
+3. []string{"hello", "world"} 
 4. string[2]{"hello", world"}
 
 
@@ -92,7 +92,7 @@ if colors == tones {
 
 1. The slices have different lengths
 2. If statement doesn't contain any statements
-3. Slices cannot be compared *CORRECT*
+3. Slices cannot be compared 
 
 > **3:** That's right! A slice value can only be compared to a nil value.
 
@@ -104,7 +104,7 @@ if colors == tones {
 
 1. 64
 2. 1
-3. 0 *CORRECT*
+3. 0 
 4. Error
 
 > **3:** That's right. This is an empty slice, it doesn't contain any elements.
@@ -120,4 +120,4 @@ if colors == tones {
 3. 2
 4. 3
 5. 4
-6. 5 *CORRECT*
+6. 5 

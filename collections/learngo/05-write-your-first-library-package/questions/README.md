@@ -3,7 +3,7 @@
 
 1. You can run a library package.
 2. In a library package, there should be a function named main (func main).
-3. You can compile a library package. *CORRECT*
+3. You can compile a library package. 
 4. You have to compile a library package.
 
 > **1:** You can't, but you can import it from other packages.
@@ -15,7 +15,7 @@
 
 ## What do you need to export a name?
 1. You need to type it in all capital letters
-2. You need to type its first letter as a capital letter *CORRECT*
+2. You need to type its first letter as a capital letter 
 3. You need to put it inside a function scope
 4. You need to create a new file for that name
 
@@ -30,7 +30,7 @@
 
 ## How can you use a function from your library from an executable program?
 1. You need to export your library package first; then you can access its imported names
-2. You need to import your library package first; then you can access its exported names *CORRECT*
+2. You need to import your library package first; then you can access its exported names 
 3. You can access your library package as if it's in your executable program
 4. You can import it just by using its name
 
@@ -60,7 +60,7 @@ func Fireball() {
 
 1. fmt
 2. doMagic
-3. Fireball *CORRECT*
+3. Fireball 
 4. Println
 
 > **1:** That's just an imported package name.
@@ -91,7 +91,7 @@ func Fireball() {
 ```
 
 1. doMagic and Fireball
-2. Fireball and Two *CORRECT*
+2. Fireball and Two 
 3. Fireball, greenTrees and Two
 4. Fireball, greenTrees, one and Two
 

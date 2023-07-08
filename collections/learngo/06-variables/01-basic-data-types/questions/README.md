@@ -1,5 +1,5 @@
 ## Which one below is an integer literal?
-* -42 *CORRECT*
+* -42 
     * This is an integer literal
 * "Hello"
     * This is a string literal
@@ -12,22 +12,22 @@
 * -42
 * "Hello"
 * false
-* 3.14 *CORRECT*
+* 3.14 
 
 ## Which one below is a float literal?
 * 6,28
 * ,28
-* .28 *CORRECT*
+* .28 
 * 628
 
 ## Which one below is a string literal?
 * -42
-* "Hello" *CORRECT*
+* "Hello" 
 * false
 * 3.14
 
 ## Which one below is a bool constant?
 * -42
 * "Hello"
-* false *CORRECT*
+* false 
 * 3.14

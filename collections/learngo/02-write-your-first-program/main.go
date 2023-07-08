@@ -23,7 +23,7 @@ import "fmt"
 
 // "func main" is special.
 //
-// Go has to know where to start
+// # Go has to know where to start
 //
 // func main creates a starting point for Go
 //
@@ -54,7 +54,7 @@ func main() {
 	// Because: Literal ~= Source Code
 
 	// EXERCISE: Remove the comments from below --> //
-	// fmt.Println("Merhaba Köstebek!")
+	fmt.Println("Merhaba Köstebek!")
 
 	// Unnecessary note:
 	// "Merhaba Köstebek" means "Hello Gopher"

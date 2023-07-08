@@ -2,10 +2,10 @@
 - bool
 - pointer
 - string
-- all numeric types *CORRECT*
+- all numeric types 
 
 ## Which type's zero value is false?
-- bool *CORRECT*
+- bool 
 - pointer
 - string
 - all numeric types
@@ -13,11 +13,11 @@
 ## Which type's zero value is ""?
 - bool
 - pointer
-- string *CORRECT*
+- string 
 - all numeric types
 
 ## Which type's zero value is nil?
 - bool
-- pointer *CORRECT*
+- pointer 
 - string
 - all numeric types

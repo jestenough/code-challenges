@@ -1,13 +1,13 @@
 ## Which group of operators below is arithmetic operators?
 1. **, /, ^, !, ++, --
-2. *, /, %, +, - *CORRECT*
+2. *, /, %, +, - 
 3. &, |, +, -, /
 
 
 ## Which value below you can use with a remainder operator?
 1. 3.54
 2. true
-3. 57 *CORRECT*
+3. 57 
 4. "Try Me!"
 
 > **4:** Nice Try. But, that's not right. Sorry.
@@ -21,7 +21,7 @@
 8 % 3
 ```
 1. 4
-2. 2 *CORRECT*
+2. 2 
 3. 0
 4. 1 
 
@@ -32,7 +32,7 @@
 1. -6
 2. -1
 3. 0
-4. 6 *CORRECT*
+4. 6 
 
 
 ## What's the result of this expression?
@@ -41,7 +41,7 @@ var degree float64 = 10 / 4
 ```
 1. 2.5
 2. 2.49
-3. 2 *CORRECT*
+3. 2 
 4. 0
 
 > **3:** That's right. An integer value cannot contain fractional parts.
@@ -52,7 +52,7 @@ var degree float64 = 10 / 4
 ```go
 var degree float64 = 3. / 2
 ```
-1. 1.5 *CORRECT*
+1. 1.5 
 2. 1.49
 3. 1
 4. 0
@@ -66,7 +66,7 @@ var degree float64 = 3. / 2
 x := 5 * 2.
 ```
 1. int
-2. float64 *CORRECT*
+2. float64 
 3. bool
 4. string
 
@@ -84,7 +84,7 @@ x := 5 * 2.
 ```go
 x := 5 * -(2)
 ```
-1. int *CORRECT*
+1. int 
 2. float64
 3. bool
 4. string
@@ -101,6 +101,6 @@ x := 5 * -(2)
 
 ## Which kind of values can result in inaccurate calculations?
 1. integers
-2. floats *CORRECT*
+2. floats 
 3. bools
 4. strings

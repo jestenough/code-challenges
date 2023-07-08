@@ -1,7 +1,7 @@
 ## Where should you save your Go source code?
 * Anywhere on my computer
 * Under $GOPATH
-* Under $GOPATH/src *CORRECT*
+* Under $GOPATH/src
 
 ## What does $GOPATH mean?
 * It's a file for Go runtime
@@ -11,9 +11,9 @@
 ## Do you need to set $GOPATH?
 * Yes
 * No: It's stored on my desktop
-* No: It's stored under my user path *CORRECT*
+* No: It's stored under my user path
 
 ## How can you print $GOPATH?
 * Using `ls` command
-* Using `go env GOPATH` command *CORRECT*
+* Using `go env GOPATH` command
 * Using `go environment` command

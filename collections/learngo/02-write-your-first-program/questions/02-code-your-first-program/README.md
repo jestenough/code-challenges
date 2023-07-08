@@ -6,7 +6,7 @@ func main() {
 }
 ```
 1. func
-2. package *CORRECT*
+2. package 
 3. fmt.Println
 4. import
 
@@ -33,7 +33,7 @@ func main() {
 ```
 * To create a library package
 * To properly exit from the program
-* To create an executable Go program *CORRECT*
+* To create an executable Go program 
 
 
 ## What is the purpose of func main in the following program?
@@ -44,7 +44,7 @@ func main() {
 }
 ```
 1. It defines a package called main
-2. It allows Go to start executing the program *CORRECT*
+2. It allows Go to start executing the program 
 3. It prints a message to the console
 
 > **1:** main function doesn't create a package.
@@ -69,7 +69,7 @@ func main() {
 ```
 1. It prints "fmt" to the console
 2. It defines a new package called "fmt"
-3. It imports the `fmt` package; so you can use its functionalities *CORRECT*
+3. It imports the `fmt` package; so you can use its functionalities 
 
 > **1:** `fmt.Println` prints a message not the `import "fmt"`.
 >
@@ -83,14 +83,14 @@ func main() {
 
 
 ## Which keyword is used to declare a new function?
-* func *CORRECT*
+* func 
 * package
 * Println
 * import
 
 
 ## What is a function?
-1. It's like a mini-program. It's a reusable and executable block of code. *CORRECT*
+1. It's like a mini-program. It's a reusable and executable block of code. 
 2. It allows Go to execute a program.
 3. It allows Go to import a package called function.
 4. It prints a message to the console.
@@ -108,7 +108,7 @@ func main() {
 
 ## Do you have to call the main function yourself?
 1. Yes, so that, I can execute my program.
-2. No, Go calls the main function automatically. *CORRECT*
+2. No, Go calls the main function automatically. 
 
 > **1:** No, you don't need to call the main function. Go automatically executes it.
 >
@@ -117,7 +117,7 @@ func main() {
 
 ## Do you have to call a function to execute it?
 _(except the main func)_
-1. Yes, so that, Go can execute that function. *CORRECT*
+1. Yes, so that, Go can execute that function. 
 2. Yes, so that, Go can execute my program.
 3. No, Go calls the functions automatically.
 
@@ -141,7 +141,7 @@ func main() {
 }
 ```
 1. It prints a message to the console
-2. It's a correct program but it doesn't print anything *CORRECT*
+2. It's a correct program but it doesn't print anything 
 3. It's an incorrect program
 
 > **1:** It doesn't print a message. To do that you can use fmt.Println function.
@@ -167,7 +167,7 @@ func main() {
 ```
 * Hi! I want to be a Gopher!
 * It doesn't print anything
-* This program is incorrect *CORRECT*
+* This program is incorrect 
 
 > **1:** It doesn't pass the message to Println wrapped between double-quotes. It should be like: fmt.Println("Hi! I want to be a Gopher")
 >
@@ -187,7 +187,7 @@ func main() {
     fmt.Println("Hi there!")
 }
 ```
-* Hi there! *CORRECT*
+* Hi there! 
 * fmt
 * This program is incorrect; it imports the wrong package or there isn't a function called `Println`
 

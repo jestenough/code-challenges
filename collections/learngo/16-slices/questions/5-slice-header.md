@@ -3,7 +3,7 @@
 ## What is a slice header?
 1. The first element of a slice value
 2. The first element of the backing array
-3. A tiny data structure that describes all or some part of a backing array *CORRECT*
+3. A tiny data structure that describes all or some part of a backing array 
 4. A data structure that contains the elements of a slice
 
 > **3:** Yes! It's just a tiny data structure with three numeric fields.
@@ -12,7 +12,7 @@
 
 
 ## What are the fields of a slice value?
-1. Pointer, length, and capacity *CORRECT*
+1. Pointer, length, and capacity 
 2. Length and capacity
 3. Only a pointer
 
@@ -28,7 +28,7 @@ Assume that the backing array is this one:
 var array [10]string
 ```
 1. array[5:]
-2. array[:5] *CORRECT*
+2. array[:5] 
 3. array[3:]
 4. array[100:]
 
@@ -46,7 +46,7 @@ var array [10]string
 ```go
 var tasks []string
 ```
-1. Pointer: 0, Length: 0, Capacity: 0 *CORRECT*
+1. Pointer: 0, Length: 0, Capacity: 0 
 2. Pointer: 10, Length: 5, Capacity: 10
 3. Pointer: 0, Length: 1, Capacity: 1
 
@@ -64,7 +64,7 @@ slice := array2[:]
 1. 1024 bytes
 2. 2024 bytes
 3. 3000 bytes
-4. 16024 bytes *CORRECT*
+4. 16024 bytes 
 
 > **4:** `array` is 1000 x int64 (8 bytes) = 8000 bytes. Assigning an array copies all its elements, so `array2` adds additional 8000 bytes. A slice doesn't store anything on its own. Here, it's being created from array2, so it doesn't allocate a backing array as well. A slice header's size is 24 bytes. So in total: This program allocates 16024 bytes.
 
@@ -77,7 +77,7 @@ sort.Ints(nums)
 1. [9 7 5 3 1] — All the values of the nums slice
 2. A pointer to the backing array of the nums slice
 3. A pointer, length and capacity as three different arguments
-4. The slice header that is stored in the nums variable *CORRECT*
+4. The slice header that is stored in the nums variable 
 
 > **1:** No, a slice value doesn't contain any elements. So it cannot pass the elements.
 > 

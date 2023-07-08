@@ -8,7 +8,7 @@ nums = append(nums, 2, 4, 6)
 fmt.Println(nums[2:4])
 ```
 1. [9 7 5 2 4 6]
-2. [5 2] *CORRECT*
+2. [5 2] 
 3. [4 6]
 4. [7 2]
 5. [9 7]
@@ -27,7 +27,7 @@ fmt.Println(nums[:2])
 2. [5 2]
 3. [4 6]
 4. [7 2]
-5. [9 7] *CORRECT*
+5. [9 7] 
 
 > **5:** nums is [9 7 5 2 4 6]. So, nums[:2] is nums[0:2] which in turn returns [9 7].
 
@@ -41,7 +41,7 @@ fmt.Println(nums[len(nums)-2:])
 ```
 1. [9 7 5 2 4 6]
 2. [5 2]
-3. [4 6] *CORRECT*
+3. [4 6] 
 4. [7 2]
 5. [9 7]
 
@@ -56,7 +56,7 @@ fmt.Println(names[:1])
 ```
 1. [einstein rosen newton]
 2. [einstein rosen]
-3. [einstein] *CORRECT*
+3. [einstein] 
 4. []
 
 > **3:** names[:] is names[0:3] -> [einstein rosen newton]. names[:1] is names[0:1] -> [einstein].
@@ -68,7 +68,7 @@ names := []string{"einstein", "rosen", "newton"}
 names[2:3] // <- marked
 ```
 
-1. []string *CORRECT*
+1. []string 
 2. string
 3. names
 4. []int
@@ -85,7 +85,7 @@ names[2] // <- marked
 ```
 
 1. []string
-2. string *CORRECT*
+2. string 
 3. names
 4. []int
 
@@ -99,7 +99,7 @@ names[2] // <- marked
 names := []string{"einstein", "rosen", "newton"}
 names = names[1:len(names) - 1]
 ```
-1. names[0] *CORRECT*
+1. names[0] 
 2. names[1]
 3. names[2]
 
@@ -117,7 +117,7 @@ fmt.Println(names)
 ```
 1. [einstein rosen newton]
 2. [rosen newton]
-3. [newton] *CORRECT*
+3. [newton] 
 4. []
 
 > **3:** Remember, slicing returns a new slice. Here, each `names = names[1:]` statement overwrites the names slice with the newly returned slice from the slicing. At first, the names was [einstein rosen newton]. After the first slicing, the names becomes [rosen newton]. After the second slicing, names becomes [newton]. See this for the complete explanation: https://play.golang.org/p/EsEHrSeByFR
@@ -133,6 +133,6 @@ fmt.Print(s)
 1. i = i * i = i*i
 2. i = %d * %d = %d
 3. i = 2 * 2 = 2
-4. i = 2 * 2 = 4 *CORRECT*
+4. i = 2 * 2 = 4 
 
 > **4:** Awesome! Sprintf works just like Printf. Instead of printing the result to standard out (usually to command-line prompt), it returns a string value.

@@ -1,7 +1,7 @@
 ## What does "control flow" mean?
 1. Changing the top-to-bottom execution of a program
 2. Changing the left-to-right execution of a program
-3. Deciding which statements are executed *CORRECT*
+3. Deciding which statements are executed 
 
 > **1, 2:** You can't change that.
 > 
@@ -18,7 +18,7 @@ if (mood == "perfect") {
 1. `if {mood == "perfect"}`
 2. `if [mood == "perfect"]`
 3. `if mood = "perfect"`
-4. `if mood == "perfect"` *CORRECT*
+4. `if mood == "perfect"` 
 
 > **1, 2:** That's a syntax error. Try again.
 > 
@@ -45,7 +45,7 @@ func main() {
 }
 ```
 1. Just wrap the "happy" inside parentheses.
-2. You need to compare mood with "happy". Like this: `if mood == "happy" { ... }` *CORRECT*
+2. You need to compare mood with "happy". Like this: `if mood == "happy" { ... }` 
 3. Just directly use `mood` instead of `happy`. Like this: `if mood { ... }`
 4. This should work! This is a tricky question.
 
@@ -72,7 +72,7 @@ func main() {
 ```
 1. `happy != false`
 2. `!happy == false`
-3. `happy` *CORRECT*
+3. `happy` 
 4. `!happy == true`
 
 > **1, 2:** Right! But you can do it better.
@@ -97,7 +97,7 @@ func main() {
 }
 ```
 1. Easy! Like this: `happy != true`
-2. `!happy` *CORRECT*
+2. `!happy` 
 3. `happy == false`
 4. `!happy == false`
 
@@ -128,7 +128,7 @@ func main() {
     }
 }
 ```
-1. Remove one of the else branches. *CORRECT*
+1. Remove one of the else branches. 
 2. Move the else if as the last branch.
 3. It repeats "why not?" several times.
 4. Remove the `else if` branch.
@@ -162,7 +162,7 @@ func main() {
 ```
 1. It declares the energic variable unnecessarily.
 2. You can't use more than one else if branch.
-3. It will never run the last else if branch. *CORRECT*
+3. It will never run the last else if branch. 
 4. There's no else branch.
 
 > **2:** Well, actually you can.
@@ -193,7 +193,7 @@ func main() {
 1. Change `else if`'s condition to: `!happy`.
 2. Move the else branch before else if.
 3. Remove the else branch.
-4. Remove the else if branch. *CORRECT*
+4. Remove the else if branch. 
 
 > **1, 3:** Close! But, you can do it even better.
 >

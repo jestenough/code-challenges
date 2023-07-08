@@ -1,7 +1,7 @@
 ## When should you use a struct type?
 1. For storing the same type of values
 2. For adding an additional type of values in runtime
-3. For combining different types in a single type to represent a concept *CORRECT*
+3. For combining different types in a single type to represent a concept 
 
 > **1:** Arrays, slices, and maps are better candidates for that.
 >
@@ -13,7 +13,7 @@
 
 ## What are the properties of struct fields?
 1. They all should be of the same type
-2. Each one should have a name and possibly a different type *CORRECT*
+2. Each one should have a name and possibly a different type 
 3. You can add additional fields in runtime
 4. You can remove the existing fields in runtime
 
@@ -31,7 +31,7 @@ type weather struct {
 ```
 1. Nothing is wrong with it
 2. `temperature, humidity float64` field is a syntax error
-3. `temperature` field is not unique *CORRECT*
+3. `temperature` field is not unique 
 
 > **2:** That's a parallel definition. It defines two float64 fields: temperature and humidity. It is correct.
 >
@@ -48,7 +48,7 @@ var movie struct {
 }
 ```
 1. `{}`
-2. `{title: "", genre: "", rating: 0, released: false}` *CORRECT*
+2. `{title: "", genre: "", rating: 0, released: false}` 
 3. `{title: "", genre: "", rating: 0, released: true}`
 4. `{"title, genre": "", rating: 0, released: false}`
 
@@ -73,7 +73,7 @@ fmt.Printf("%T\n", avengers)
 ```
 1. `struct{}`
 2. `struct{ string; string; float64; bool }`
-3. `struct{ title string; genre string; rating float64; released bool }` *CORRECT*
+3. `struct{ title string; genre string; rating float64; released bool }` 
 4. `{title: "avengers: end game"; genre: "sci-fi"; rating: 8.9; released: true}`
 
 > **1:** That's an empty struct type with no fields.
@@ -101,7 +101,7 @@ clone    := movie{
             }
 ```
 1. There is a syntax error
-2. Yes *CORRECT*
+2. Yes 
 3. No
 
 > **2:** When creating a struct value, it doesn't matter whether you use the field names or not. So, they are equal.
@@ -128,7 +128,7 @@ fmt.Println(avengers == clone)
 ```
 1. Yes: They have the same set of fields
 2. No : They are not comparable
-3. No : Field values are different *CORRECT*
+3. No : Field values are different 
 
 > **1:** That's right, this means they are comparable, but that's not enough.
 >
@@ -145,7 +145,7 @@ type movie       struct { item }
 type performance struct { item }
 ```
 1. Yes: They have the same set of fields
-2. No : They have different type names *CORRECT*
+2. No : They have different type names 
 3. No : An embedded field cannot be compared
 
 > **2:** Right! Types with different names cannot be compared. However, you can convert one of them to the other because they have the same set of fields. movie{} == movie(performance{}) is ok, or vice versa.
@@ -171,7 +171,7 @@ fmt.Println(m.title, "&", m.item.title)
 1. midnight in paris & midnight in paris
 2. avengers: end game & avengers: end game
 3. midnight in paris & avengers: end game
-4. avengers: end game & midnight in paris *CORRECT*
+4. avengers: end game & midnight in paris 
 
 > **4:** Right! `m.title` returns "avengers: end game" because the outer type always takes priority. However, `m.item.title` returns "midnight in paris" because you explicitly get it from the inner type: item.
 >
@@ -181,7 +181,7 @@ fmt.Println(m.title, "&", m.item.title)
 1. It allows Go to index struct fields more efficiently
 2. You can use it for documenting your code
 3. It's like a comment
-4. Associates metadata about the field *CORRECT*
+4. Associates metadata about the field 
 
 > **4:** Correct. For example, the json package can read and encode/decode depending on the associated metadata.
 
@@ -189,7 +189,7 @@ fmt.Println(m.title, "&", m.item.title)
 ## Which one is correct about a field tag?
 1. It needs to be typed according to some rules
 2. You can change it to a different value in runtime
-3. It's just a string value, and it doesn't have a meaning on its own *CORRECT*
+3. It's just a string value, and it doesn't have a meaning on its own 
 
 > **1:** This is true to some extent but it can have any value.
 > 
@@ -211,7 +211,7 @@ encoded, _ := json.Marshal(m)
 fmt.Println(string(encoded))
 ```
 1. `movie` is unexported so you cannot encode
-2. `title` is unexported so you cannot encode *CORRECT*
+2. `title` is unexported so you cannot encode 
 3. Error handling is missing so you cannot encode
 
 > **1:** The json package can encode a struct even though its type is unexported.
@@ -224,7 +224,7 @@ fmt.Println(string(encoded))
 
 ## Why do you need to pass a pointer to the Unmarshal function?
 1. To make it work faster and efficient
-2. So it can update the value on memory *CORRECT*
+2. So it can update the value on memory 
 3. To prevent errors
 
 > **2:** Otherwise, it would not be able to update the given value. It's because, every value in Go is passed by value. So a function can only change the copy, not the original value. However, through a pointer, a function can change the original value.

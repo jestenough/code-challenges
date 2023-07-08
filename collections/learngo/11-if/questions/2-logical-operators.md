@@ -1,6 +1,6 @@
 ## Which one below is not one of the logical operators of Go?
 1. `||`
-2. `!=` *CORRECT*
+2. `!=` 
 3. `!`
 4. `&&`
 
@@ -10,7 +10,7 @@
 ## Which one of these types is returned by a logical operator?
 1. int
 2. byte
-3. bool *CORRECT*
+3. bool 
 4. float64
 
 > **3:** That's right. All the logical operators return an untyped bool value (true or false).
@@ -19,7 +19,7 @@
 ## Which one of these can be used as an operand to a logical operator?
 1. int
 2. byte
-3. bool *CORRECT*
+3. bool 
 4. float64
 
 > **3:** That's right. All the logical operators expect a bool value (or a bool expression that yields a bool value).
@@ -30,7 +30,7 @@
 
 1. `age > 15 || hairColor == "yellow"`
 2. `age < 15 || hairColor != "yellow"`
-3. `age >= 15 && hairColor == "yellow"` *CORRECT*
+3. `age >= 15 && hairColor == "yellow"` 
 4. `age > 15 && hairColor == "yellow"`
 
 
@@ -52,7 +52,7 @@ func main() {
 
 1. true true
 2. true false
-3. false true *CORRECT*
+3. false true 
 4. false false
 5. error
 
@@ -72,7 +72,7 @@ func main() {
 
 1. true
 2. false
-3. error *CORRECT*
+3. error 
 
 > **3:** `on` is int, while `true` is a bool. So, there's a type mismatch error here. Go is not like other C based languages where `1` equals to `true`.
 
@@ -87,7 +87,7 @@ fmt.Println(a || b)
 
 1. "a"
 2. "b"
-3. true *CORRECT*
+3. true 
 4. false
 5. error
 
@@ -130,7 +130,7 @@ func isOff() bool {
 ```
 
 1. "on off on off "
-2. "off on " *CORRECT*
+2. "off on " 
 3. "off on on off "
 4. "on off "
 

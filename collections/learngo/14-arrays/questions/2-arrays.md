@@ -7,7 +7,7 @@ gadgets := [...]string{"Mighty Mouse", "Amazing Keyboard", "Shiny Monitor"}
 1. 0
 2. 1
 3. 2
-4. 3 *CORRECT*
+4. 3 
 
 > **4:** Yes! There are 3 elements in the element list. So, Go sets the length of the array to 3.
 >
@@ -17,7 +17,7 @@ gadgets := [...]string{"Mighty Mouse", "Amazing Keyboard", "Shiny Monitor"}
 ```go
 gadgets := [...]string{}
 ```
-1. [0]string and 0 *CORRECT*
+1. [0]string and 0 
 2. [0]string{} and 0
 3. [1]string and 1 
 4. [1]string{} and 1 
@@ -37,7 +37,7 @@ func main() {
 ```
 1. [3]string{"Confused Drone", "", ""}
 2. [1]string{"Confused Drone"}
-3. ["Confused Drone" "" ""] *CORRECT*
+3. ["Confused Drone" "" ""] 
 4. ["Confused Drone"]
 
 > **1:** %q verb doesn't print the type of an array.
@@ -56,7 +56,7 @@ gears   := [...]string{"Confused Drone"}
 fmt.Println(gadgets == gears)
 ```
 1. Yes, because they have identical types and elements
-2. No, because their types are different *CORRECT*
+2. No, because their types are different 
 3. No, because their elements are different
 
 > **2:** Yes! gadget's type is [3]string whereas gears's type is [1]string.
@@ -73,7 +73,7 @@ gears[2] = "Shiny Mouse"
 fmt.Printf("%q\n", gadgets)
 ```
 1. ["Confused Drone" "Broken Phone" "Shiny Mouse"]
-2. ["Confused Drone" "Broken Phone" ""] *CORRECT*
+2. ["Confused Drone" "Broken Phone" ""] 
 3. ["" "" "Shiny Mouse"]
 4. ["" "" ""]
 
@@ -102,7 +102,7 @@ digits := [...][5]string{
 ```
 1. [...][5]string
 2. [2][2]string
-3. [2][5]string *CORRECT*
+3. [2][5]string 
 4. [5][5]string
 
 > **3:** Awesome! There are two inner arrays, so the outer array's length becomes 2. Also note that, `[5]string` in front of the second element is unnecessary.
@@ -119,7 +119,7 @@ rates := [...]float64{
 
 fmt.Printf("%#v\n", rates)
 ```
-1. [7]float64{0.5, 0, 0, 0, 0, 1.5, 2.5} *CORRECT*
+1. [7]float64{0.5, 0, 0, 0, 0, 1.5, 2.5} 
 2. [7]float64{1.5, 2.5, 0.5, 0, 0, 0, 0}
 3. [3]float64{1.5, 2.5, 0.5}
 4. [3]float64{0.5, 2.5, 1.5}
@@ -139,7 +139,7 @@ nums2 := three{1, 2, 3}
 fmt.Println(nums == nums2)
 ```
 **Note:** _To solve this question you need to watch the comparison and unnamed types lectures._
-1. Yes, because they have identical underlying types and elements *CORRECT*
+1. Yes, because they have identical underlying types and elements 
 2. No, because their types are different
 3. No, because their length is different
 
@@ -160,7 +160,7 @@ nums2 := threeA(threeB{1, 2, 3})
 fmt.Println(nums == nums2)
 ```
 **Note:** _To solve this question you need to the watch comparison and unnamed types lectures._
-1. Yes, because they have identical underlying types and elements *CORRECT*
+1. Yes, because they have identical underlying types and elements 
 2. No, because their types are different
 3. No, because their length is different
 

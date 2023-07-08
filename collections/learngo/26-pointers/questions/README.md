@@ -1,7 +1,7 @@
 ## What is a pointer?
 1. A variable that contains an hexadecimal value
 2. A variable that contains a memory address
-3. A value that can contain a memory address of a value *CORRECT*
+3. A value that can contain a memory address of a value 
 4. A value that points to a function
 
 > **2:** Although a pointer can be put into a variable, it's not solely a variable. You're almost there! But this distinction is very important.
@@ -18,7 +18,7 @@ type computer struct {
 1. `*computer{}`
 2. `var c computer`
 3. `var *c computer`
-4. `var c *computer` *CORRECT*
+4. `var c *computer` 
 
 > **4:** * in front of a type denotes a pointer type.
 
@@ -31,7 +31,7 @@ type computer struct {
 
 c := &computer{"Apple"}
 ```
-1. `*c` *CORRECT*
+1. `*c` 
 2. `&c`
 3. `c`
 4. `*computer`
@@ -58,7 +58,7 @@ fmt.Print(" ", a == b, " ", *a == *b)
 ```
 1. false false false
 2. true true true
-3. true false true *CORRECT*
+3. true false true 
 4. false true true
 
 > **3:** a and b are nil at the beginning, so they are equal. However, after that, they get two different memory addresses from the composite literals, so their addresses are not equal but their values (that are pointed by the pointers) are equal.
@@ -85,14 +85,14 @@ func change(c *computer) {
 1. 1
 2. 2
 3. 3
-4. 4 *CORRECT*
+4. 4 
 
 > **4:** Every time a func runs, it creates new variables from its input params and named result values (if any). There two pointer variables: a and b. Then there are, two more pointer variables because: change is called two times.
 
 
 ## Why you cannot take the address of a map's elements?
 1. It's an addressable value
-2. It's an unaddressable value *CORRECT*
+2. It's an unaddressable value 
 3. Doing so can crash your program
 
 > **2:** Map elements are not addressable, so you cannot take their addresses.

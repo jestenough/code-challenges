@@ -1,7 +1,7 @@
 ## Which one below is not one of the equality operators of Go?
 1. `==`
 2. `!=`
-3. `>` *CORRECT*
+3. `>` 
 
 > **3:** That's the greater operator. It checks whether an ordered value is greater than the other or not.
 
@@ -9,7 +9,7 @@
 ## Which one below is not one of the ordering operators of Go?
 1. `>`
 2. `<=`
-3. `==` *CORRECT*
+3. `==` 
 4. `<`
 
 > **3:** That's the equal operator. In an expression, it checks whether a value (operand) is equal to another value (operand).
@@ -18,7 +18,7 @@
 ## Which one of these types is returned by the comparison operators?
 1. int
 2. byte
-3. bool *CORRECT*
+3. bool 
 4. float64
 
 > **3:** That's right. All the comparison operators return an untyped bool value (true or false).
@@ -28,7 +28,7 @@
 1. int value
 2. byte value
 3. string value
-4. bool value *CORRECT*
+4. bool value 
 5. all of them
 
 > **1-2:** This is an ordered value, it can be used.
@@ -43,7 +43,7 @@
 2. byte value
 3. string value
 4. bool value
-5. They all can be used *CORRECT*
+5. They all can be used 
 
 > **5:** That's right. Every **comparable value** can be used as an operand to equality operators.
 
@@ -55,7 +55,7 @@ fmt.Println("go" == "go!")
 ```
 
 1. true true
-2. true false *CORRECT*
+2. true false 
 3. false true
 4. false false
 5. error
@@ -72,7 +72,7 @@ fmt.Println(1 == true)
 2. 1
 3. false
 4. 2
-5. error *CORRECT*
+5. error 
 
 > **5:** That's right. A numeric constant cannot be compared to a bool value.
 
@@ -85,7 +85,7 @@ fmt.Println(2.9 <= 2.9)
 
 1. true true
 2. true false
-3. false true *CORRECT*
+3. false true 
 4. false false
 5. error
 
@@ -100,7 +100,7 @@ fmt.Println(true <= false)
 2. true false
 3. false true
 4. false false
-5. error *CORRECT*
+5. error 
 
 > **5:** That's right. Bool values are not ordered values, so they cannot be compared using the comparison operators.
 
@@ -122,7 +122,7 @@ func main() {
 2. `weight *= float64(factor)`
 3. `weight *= int(factor)`
 4. `weight = float64(weight) * factor`
-5. `weight = int(float64(weight) * factor)` *CORRECT*
+5. `weight = int(float64(weight) * factor)` 
 
 > **1:** It can be fixed.
 > 

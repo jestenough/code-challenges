@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Shy Semicolons
 //
@@ -19,4 +21,7 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	fmt.Println("inanc")
+	fmt.Println("lina")
+	fmt.Println("ebru")
 }

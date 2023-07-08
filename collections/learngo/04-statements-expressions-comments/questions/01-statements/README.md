@@ -1,5 +1,5 @@
 ## Which one is the correct description for a statement?
-1. A statement instructs Go to do something 
+1. A statement instructs Go to do something *CORRECT*
 2. A statement produces a value
 3. A statement can't change the execution flow
 
@@ -13,7 +13,7 @@
 
 ## What's the direction of execution in a Go code?
 1. From left to right
-2. From top to bottom 
+2. From top to bottom *CORRECT*
 3. From right to left
 4. From bottom to top
 
@@ -24,7 +24,7 @@
 
 ## Which one is the correct description for an expression?
 1. An expression instructs Go to do something
-2. An expression produces a value 
+2. An expression produces a value *CORRECT*
 3. An expression can change the execution flow
 
 > **1:** It can't. Only a statement can do that.
@@ -38,7 +38,7 @@
 ## Which one is the correct description for an operator?
 1. An operator instructs Go to do something
 2. An operator can change the execution flow
-3. An operator can combine expressions 
+3. An operator can combine expressions *CORRECT*
 
 > **1:** It can't. Only a statement can do that.
 >
@@ -58,7 +58,7 @@ func main() {
 }
 ```
 
-1. "Hello" is an expression and it can't be on its own on a single line of code without a statement. 
+1. "Hello" is an expression and it can't be on its own on a single line of code without a statement. *CORRECT* 
 2. By removing the double-quotes surrounding the "Hello". Like this: Hello
 3. By moving "Hello" out of the func main.
 
@@ -76,7 +76,7 @@ func main() {
 }
 ```
 
-1. It works: Expressions can be typed by separating them using semicolons
+1. It works: Expressions can be typed by separating them using semicolons *CORRECT*
 2. It doesn't work: Statements should be on their own on a single line of code
 3. It works: Go adds semicolons behind the scenes for every statement already 
 
@@ -104,7 +104,7 @@ func main() {
 }
 ```
 
-1. Operators can combine expressions 
+1. Operators can combine expressions *CORRECT*
 2. Statements can be used with operators
 3. Expressions can return multiple values
 

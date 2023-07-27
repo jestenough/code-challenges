@@ -1,23 +1,23 @@
 ## Which code is correct?
 * `fmt.Printf("Hi %s")`
 * `fmt.Printf("Hi %s", "how", "are you")`
-* `fmt.Printf("Hi %s", "hello")` 
+* `fmt.Printf("Hi %s", "hello")` `CORRECT`
 * `fmt.Printf("Hi %s", true)`
 
 ## Which code is correct?
 * `fmt.Printf("Hi %s %s", "there")`
 * `fmt.Printf("Hi %s %s", "5", true)`
-* `fmt.Printf("Hi %s %s", "there", ".")` 
+* `fmt.Printf("Hi %s %s", "there", ".")` `CORRECT`
 * `fmt.Printf("Hi %s %s", "true", false)`
 
 ## Which verb is used for an int value?
 * %f
-* %d 
+* %d `CORRECT`
 * %s
 * %t
 
 ## Which verb is used for a float value?
-* %f 
+* %f `CORRECT`
 * %d
 * %s
 * %t
@@ -25,46 +25,46 @@
 ## Which verb is used for a string value?
 * %f
 * %d
-* %s 
+* %s `CORRECT`
 * %t
 
 ## Which verb is used for a bool value?
 * %f
 * %d
 * %s
-* %t 
+* %t `CORRECT`
 
 ## Which verb you can use for any type of value?
 * %f
 * %d
-* %v 
+* %v `CORRECT`
 * %t
 
 ## What does `"\n"` print?
 * \n
-* Prints a newline 
+* Prints a newline `CORRECT`
 * Prints an empty string
 
 ## What does `"\\n"` print?
-* \n 
+* \n `CORRECT`
 * Prints a newline
 * Prints an empty string
 
 ## What does "c:\\secret\\directory" print?
 * "c:\\secret\\directory"
 * c:\\secret\\directory
-* c:\secret\directory 
+* c:\secret\directory `CORRECT`
 
 ## What does `"\"heisenberg\""` print?
 * ERROR
 * heisenberg
-* "heisenberg" 
+* "heisenberg" `CORRECT`
 * 'heisenberg'
 
 ## What does `fmt.Printf("%T", 3.14)` print?
 * ERROR
 * int
-* float64 
+* float64 `CORRECT`
 * string
 * bool
 
@@ -73,11 +73,11 @@
 * int
 * float64
 * string
-* bool 
+* bool `CORRECT`
 
 ## What does `fmt.Printf("%T", 42)` print?
 * ERROR
-* int 
+* int `CORRECT`
 * float64
 * string
 * bool
@@ -86,5 +86,5 @@
 * ERROR
 * int
 * float64
-* string 
+* string `CORRECT`
 * bool

@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Print the Temperature
 //
@@ -22,5 +24,6 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// ?
+	temperature := 29.50000
+	fmt.Printf("Temperature is %.1f", temperature)
 }

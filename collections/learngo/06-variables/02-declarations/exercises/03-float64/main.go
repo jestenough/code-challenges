@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Declare float64
 //
@@ -20,6 +22,6 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// var ? ?
-	// ?
+	var brightness float64
+	fmt.Print(brightness)
 }

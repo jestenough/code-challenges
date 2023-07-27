@@ -8,6 +8,11 @@
 
 package main
 
+import (
+	"fmt"
+	"os"
+)
+
 // ---------------------------------------------------------
 // EXERCISE: Print Your Name
 //
@@ -32,6 +37,7 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// get your name from the command-line
-	// and print it
+	name := os.Args[1]
+	fmt.Println(name)
+	fmt.Println("Hi", name, "\nHow are you?")
 }

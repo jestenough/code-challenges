@@ -12,22 +12,22 @@
 * -42
 * "Hello"
 * false
-* 3.14 
+* 3.14  # CORRECT
 
 ## Which one below is a float literal?
 * 6,28
 * ,28
-* .28 
+* .28  # CORRECT
 * 628
 
 ## Which one below is a string literal?
 * -42
-* "Hello" 
+* "Hello"  # CORRECT
 * false
 * 3.14
 
 ## Which one below is a bool constant?
 * -42
 * "Hello"
-* false 
+* false  # CORRECT
 * 3.14

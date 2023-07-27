@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Variables To Variables
 //
@@ -24,27 +26,13 @@ package main
 //  WRONG ANSWER, DO NOT DO THIS:
 //  `color = "dark green"`
 //
-// HINT
-//  + operator can concatenate string values
-//
-//  Example:
-//
-//  "h" + "e" + "y" returns "hey"
-//
 // EXPECTED OUTPUT
 //  dark green
 // ---------------------------------------------------------
 
 func main() {
-	// UNCOMMENT THE CODE BELOW:
+	color := "green"
+	color = "dark " + color
 
-	// color := "green"
-
-	// ADD YOUR CODE BELOW
-
-	// ?
-
-	// UNCOMMENT THE CODE BELOW TO PRINT THE VARIABLE
-
-	// fmt.Println(color)
+	fmt.Println(color)
 }

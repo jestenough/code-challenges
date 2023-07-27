@@ -17,5 +17,7 @@ package main
 //     use it
 // ---------------------------------------------------------
 
+var helloThere string
+
 func main() {
 }

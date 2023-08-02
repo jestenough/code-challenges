@@ -4,7 +4,7 @@ var n float64
 ```
 1. `n = +1`
 2. `n = n++`
-3. `n = n + 1` 
+3. `n = n + 1` `CORRECT`
 4. `++n`
 
 > **1:** This just assigns 1 to n.
@@ -21,7 +21,7 @@ var n int
 ```
 1. `n = -1`
 2. `n = n--`
-3. `n = n - 1` 
+3. `n = n - 1` `CORRECT`
 4. `--n`
 
 > **1:** This just assigns -1 to n.
@@ -33,7 +33,7 @@ var n int
 
 
 ## Which code below equals to `n = n + 1`?
-1. `n++` 
+1. `n++` `CORRECT`
 2. `n = n++`
 3. `++n`
 4. `n = n ++ 1`
@@ -48,7 +48,7 @@ var n int
 
 ## Which code below equals to `n = n + 1`?
 1. `n = n++`
-2. `n += 1` 
+2. `n += 1` `CORRECT`
 3. `++n`
 4. `n = n ++ 1`
 
@@ -63,7 +63,7 @@ var n int
 ## Which code below equals to `n -= 1`?
 1. `n = n--`
 2. `n += 1--`
-3. `n--` 
+3. `n--` `CORRECT`
 4. `--n`
 
 > **1:** IncDec statement can't be used as an operator.
@@ -76,7 +76,7 @@ var n int
 
 ## Which code below divides the `length` by 10?
 1. `length = length // 10`
-2. `length /= 10` 
+2. `length /= 10` `CORRECT`
 3. `length //= 10`
 
 > **1:** What's that? `//`?
@@ -90,7 +90,7 @@ var n int
 ## Which code below equals to `x = x % 2`?
 1. `x = x / 2`
 2. `x =% 2`
-3. `x %= 2` 
+3. `x %= 2` `CORRECT`
 
 > **1:** This is a division. You need to use the remainder operator.
 >
@@ -102,7 +102,7 @@ var n int
 1. `fmtconv.ToFloat`
 2. `conv.ParseFloat`
 3. `strconv.ParseFloat` 
-4. `strconv.ToFloat`
+4. `strconv.ToFloat` `CORRECT`
 
 
 ## Which code is correct?
@@ -111,7 +111,7 @@ If you don't remember it, this its function signature:
 func ParseFloat(s string, bitSize int) (float64, error)
 ```
 1. `strconv.ParseFloat("10", 128)`
-2. `strconv.ParseFloat("10", 64)` 
+2. `strconv.ParseFloat("10", 64)` `CORRECT`
 3. `strconv.ParseFloat("10", "64")`
 4. `strconv.ParseFloat(10, 64)`
 

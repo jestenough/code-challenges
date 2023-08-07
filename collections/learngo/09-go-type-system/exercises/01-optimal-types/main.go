@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Optimal Types
 //
@@ -36,16 +38,30 @@ func main() {
 	// ---
 
 	// an english letter (search web for: ascii control code)
+	var englishLetter byte = 'a'
+	fmt.Println(englishLetter)
 
 	// a non-english letter (search web for: unicode codepoint)
+	var nonEnglishLetter rune = 'щ'
+	fmt.Println(nonEnglishLetter)
 
 	// a year in 4 digits like 2040
+	var year int16 = 2040
+	fmt.Println(year)
 
 	// a month in 2 digits: 1 to 12
+	var month int8 = 12
+	fmt.Println(month)
 
 	// the speed of the light
+	var speedOfTheLight int32 = 299792458
+	fmt.Println(speedOfTheLight)
 
 	// angle of a circle
+	var angleOfACircle float32 = 35.8
+	fmt.Println(angleOfACircle)
 
 	// PI number: 3.141592653589793
+	var piNumber float64 = 3.141592653589793
+	fmt.Println(piNumber)
 }

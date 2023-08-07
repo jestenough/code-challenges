@@ -41,13 +41,13 @@ func main() {
 	// You should solve it only by using conversions.
 	// Do not change the code in any other way.
 
-	// celsius *= celsiusDegree * factor
-	// fahr *= fahrDegree * factor
+	celsius *= Celsius(float64(celsiusDegree) * factor)
+	fahr *= Fahrenheit(float64(fahrDegree) * factor)
 
 	// ----------------------------------------
 	// DONT TOUCH THIS
 	fmt.Println(celsius, fahr)
 
-	// YOU MAY REMOVE THESE WHEN YOU'RE DONE
-	_, _, _ = celsiusDegree, fahrDegree, factor
+	//// YOU MAY REMOVE THESE WHEN YOU'RE DONE
+	//_, _, _ = celsiusDegree, fahrDegree, factor
 }

@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Minutes in Weeks
 //
@@ -28,4 +30,11 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	const (
+		minsPerDay int16 = 1440
+		weekDays   int8  = 7
+	)
+
+	fmt.Printf("There are %d minutes in %d weeks.\n",
+		minsPerDay*int16(weekDays)*2, 2)
 }

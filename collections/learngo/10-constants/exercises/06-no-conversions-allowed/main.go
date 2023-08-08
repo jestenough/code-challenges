@@ -8,6 +8,11 @@
 
 package main
 
+import (
+	"fmt"
+	"time"
+)
+
 // ---------------------------------------------------------
 // EXERCISE: No Conversions Allowed
 //
@@ -19,9 +24,9 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// const later int = 10
+	const later = 10
 
-	// hours, _ := time.ParseDuration("1h")
+	hours, _ := time.ParseDuration("1h")
 
-	// fmt.Printf("%s later...\n", hours*later)
+	fmt.Printf("%s later...\n", hours*later)
 }

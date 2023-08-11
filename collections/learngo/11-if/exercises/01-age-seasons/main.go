@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Age Seasons
 //
@@ -29,7 +31,19 @@ package main
 
 func main() {
 	// Change this accordingly to produce the expected outputs
-	// age := 10
+	age := 10
+
+	if age > 60 {
+		fmt.Println("Getting older")
+	} else if age > 30 {
+		fmt.Println("Getting wiser")
+	} else if age > 20 {
+		fmt.Println("Adulthood")
+	} else if age > 10 {
+		fmt.Println("Young blood")
+	} else {
+		fmt.Println("Booting up")
+	}
 
 	// Type your if statement here.
 }

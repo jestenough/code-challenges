@@ -37,24 +37,16 @@ func main() {
 
 	days, month := 28, os.Args[1]
 
-	if m := strings.ToLower(month); m == "april" ||
-		m == "june" ||
-		m == "september" ||
-		m == "november" {
+	switch strings.ToLower(month) {
+	case "april", "june", "september", "november":
 		days = 30
-	} else if m == "january" ||
-		m == "march" ||
-		m == "may" ||
-		m == "july" ||
-		m == "august" ||
-		m == "october" ||
-		m == "december" {
+	case "january", "march", "may", "july", "august", "october", "december":
 		days = 31
-	} else if m == "february" {
+	case "february":
 		if leap {
 			days = 29
 		}
-	} else {
+	default:
 		fmt.Printf("%q is not a month.\n", month)
 		return
 	}

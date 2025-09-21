@@ -7,6 +7,7 @@
 <div class="micro-badgets">
     <img src="https://www.codewars.com/users/jestenough/badges/micro"/>
     <img src="https://img.shields.io/badge/dynamic/json?style=flat&labelColor=gray&color=%23ffa116&label=Solved&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fjestenough&logo=leetcode&logoColor=blue"/>
+    <img src="https://badges.riever.dev/codeforces/neuromant.svg" />    
 </div>
 
 <div class="small-badgets">
